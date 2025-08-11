@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Shadma Shaikh — Clips</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <h1>Shadma Shaikh</h1>
+      <p class="subtitle">A curated collection of clips — audio, video, and speaking snippets.</p>
+    </div>
+  </header>
+
+  <main class="container">
+    <section id="clips-grid" class="grid"></section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>Made with ♥ — Replace the media in <code>/assets</code> to publish. Template by ChatGPT.</p>
+    </div>
+  </footer>
+
+  <template id="clip-template">
+    <article class="clip-card">
+      <div class="thumb" aria-hidden="true">
+        <!-- svg placeholder injected by JS if no thumbnail -->
+      </div>
+      <div class="meta">
+        <h3 class="title"></h3>
+        <p class="desc"></p>
+        <div class="controls"></div>
+      </div>
+    </article>
+  </template>
+
+  <script src="script.js"></script>
+</body>
+</html>
