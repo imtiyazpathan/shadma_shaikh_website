@@ -3,40 +3,89 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Shadma Shaikh — Clips</title>
+  <title>Shadma Shaikh — Technology Journalist</title>
   <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
   <header class="site-header">
-    <div class="container">
-      <h1>Shadma Shaikh</h1>
-      <p class="subtitle">A curated collection of clips — audio, video, and speaking snippets.</p>
-    </div>
+    <nav class="container nav">
+      <div class="nav-left">
+        <a href="#" class="logo">Shadma Shaikh</a>
+      </div>
+      <div class="nav-right">
+        <a href="#reporting">Reporting</a>
+        <a href="#contact">Contact</a>
+        <a href="https://www.linkedin.com/in/shadma-shaikh-8b093630/" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="https://www.instagram.com/shadma_shaikh_stories/" target="_blank" rel="noopener">Instagram</a>
+        <a href="https://x.com/ShadmaShaikh" target="_blank" rel="noopener">X</a>
+      </div>
+    </nav>
   </header>
 
-  <main class="container">
-    <section id="clips-grid" class="grid"></section>
+  <main>
+    <section class="hero container hero-flex">
+      <div class="hero-img">
+        <img src="assets/shadma_photo.jpeg" alt="Shadma Shaikh" />
+      </div>
+      <div class="hero-text">
+          <h1>
+              Technology Journalist based in Bangalore, India
+          </h1>
+        <p>
+            As a South Asian journalist, I dig where technology intersects with inequality. My
+            work as a long-form journalist examines how AI, platforms and digital infrastructure
+            shape lives far within and far from the tech hubs. From rural data labor to global
+            app politics, my reporting brings forward the inner workings of the emerging digital
+            world.
+            .
+        </p>
+      </div>
+    </section>
+
+    <section id="reporting" class="container reporting">
+      <h2>Selected Reporting</h2>
+      <div class="reporting-grid">
+        <article>
+          <h3>India’s Voice-First Internet</h3>
+          <p>How voice-AI is reshaping internet use for non-typing users.</p>
+          <a href="https://www.livemint.com/technology/voice-ai-non-typing-internet-users-indiaai-mission-language-models-multilingual-voice-assistant-sarvam-gnani-chatgpt-11750067327087.html" target="_blank" class="link-button">Read Article</a>
+        </article>
+        <article>
+          <h3>Inside India’s Offline AI Bet</h3>
+          <p>Startups are pushing AI beyond big cities.</p>
+          <a href="https://www.livemint.com/companies/ai-bet-startups-smarter-chips-china-us-gpu-nvidia-hardware-netrasemi-intel-semicon-fabless-model-chatgpt-gemini-11753107818519.html" target="_blank" class="link-button">Read Article</a>
+        </article>
+        <article>
+          <h3>AI in Child Growth Monitoring</h3>
+          <p>How rural India is adopting AI-powered anthropometry tools.</p>
+          <a href="https://www.livemint.com/ai/ai-children-child-healthcare-wadhwani-shishu-mapan-app-asha-workers-low-birth-weight-malnutrition-newborn-infant-growth-11751797326053.html" target="_blank" class="link-button">Read Article</a>
+        </article>
+        <article>
+          <h3>India’s Quest for AI Independence</h3>
+          <p>Exploring India’s strategic journey toward AI self-reliance.</p>
+          <a href="https://www.technologyreview.com/2025/07/04/1119705/inside-indias-scramble-for-ai-independence/" target="_blank" class="link-button">Read Article</a>
+        </article>
+        <article>
+          <h3>Kwai and CSAM in India</h3>
+          <p>Investigating harmful content on Chinese platforms.</p>
+          <a href="https://factordaily.com/chinese-app-kwai-turns-a-blind-eye-to-videos-of-underage-girls-in-india/" target="_blank" class="link-button">Read Article</a>
+        </article>
+      </div>
+    </section>
+
+    <section id="contact" class="container contact">
+      <h2>Contact</h2>
+      <p>Email: <a href="mailto:shadma.s.shaikh@gmail.com">shadma.s.shaikh@gmail.com</a></p>
+    </section>
   </main>
 
   <footer class="site-footer">
     <div class="container">
-      <p>Made with ♥ — Replace the media in <code>/assets</code> to publish. Template by ChatGPT.</p>
+      <p>&copy; 2025 Shadma Shaikh — Made with ♥</p>
     </div>
   </footer>
-
-  <template id="clip-template">
-    <article class="clip-card">
-      <div class="thumb" aria-hidden="true">
-        <!-- svg placeholder injected by JS if no thumbnail -->
-      </div>
-      <div class="meta">
-        <h3 class="title"></h3>
-        <p class="desc"></p>
-        <div class="controls"></div>
-      </div>
-    </article>
-  </template>
-
-  <script src="script.js"></script>
 </body>
 </html>
